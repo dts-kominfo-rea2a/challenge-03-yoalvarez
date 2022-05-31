@@ -33,8 +33,8 @@ const listBelanjaan = function(arrayParameter) {
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const totalBelanjaan = function(arrayParameter) {
   let totalHarga = 0;
-  for (let index = 0; index < dataBelanjaan.length; index++)  {
-    let hargaItem = dataBelanjaan[index].harga * dataBelanjaan[index].kuantitas;
+  for (let index = 0; index < arrayParameter.length; index++)  {
+    let hargaItem = arrayParameter[index].harga * arrayParameter[index].kuantitas;
     totalHarga += hargaItem;
   }
   return totalHarga;
